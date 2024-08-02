@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Feedback</title>
+    <style>
+        #container{
+            border: 2px solid #544f4f;
+            width: 500px;
+            height: 400px;
+            background-color:  #544f4f;
+            margin-top: 60px;
+            margin-left: 390px;
+            color: white;
+        }
+        body{
+            background-color: #1f1e1e;
+        }
+        h1{
+            margin-left: 120px;
+        }
+        label{
+            margin-left: 80px;
+        }
+        #name{
+            margin-left: 80px;
+        }
+        #email{
+            margin-left: 80px;
+        }
+        #message{
+            margin-left: 80px;
+        }
+        #submit{
+            margin-left: 160px;
+            width: 80px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1c8de3;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Help & Feedback</h1>
+    <form action="send_feedback.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+        </div>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Help & Feedback</title>
+     <style>
+         body {
+             background-color: #1f1e1e;
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+         }
+
+         #container {
+             border: 2px solid #544f4f;
+             width: 100%;
+             max-width: 600px;
+             background-color: #544f4f;
+             padding: 20px;
+             border-radius: 10px;
+             color: white;
+         }
+
+         h1 {
+             text-align: center;
+             margin-bottom: 20px;
+         }
+
+         label {
+             display: block;
+             margin-bottom: 8px;
+         }
+
+         input[type="text"], input[type="email"], textarea {
+             width: 100%;
+             padding: 10px;
+             border-radius: 5px;
+             border: 1px solid #333;
+             margin-bottom: 20px;
+             background-color: white;
+             color: black;
+         }
+
+         textarea {
+             resize: vertical;
+         }
+
+         #submit {
+             width: 100%;
+             padding: 10px;
+             border: none;
+             border-radius: 5px;
+             background-color: #1c8de3;
+             color: white;
+             cursor: pointer;
+         }
+
+         @media (max-width: 768px) {
+             body {
+                 padding: 20px;
+             }
+         }
+     </style>
+ </head>
+ <body>
+     <div id="container">
+         <h1>Help & Feedback</h1>
+         <form action="send_feedback.php" method="post">
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" required>
+
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required>
+
+             <label for="message">Message:</label>
+             <textarea id="message" name="message" rows="4" required></textarea>
+
+             <input type="submit" id="submit" value="Submit">
+         </form>
+     </div>
+ </body>
+ </html>
